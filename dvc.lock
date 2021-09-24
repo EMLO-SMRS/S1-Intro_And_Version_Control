@@ -14,3 +14,4 @@ stages:
     - path: model.pt
       md5: d258efced51ee3d20fea8390e8e74f82
       size: 89509909
+
