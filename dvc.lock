@@ -1,17 +1,31 @@
 schema: '2.0'
 stages:
   train:
-    cmd: python train.py --force
+    cmd: python train.py
     deps:
     - path: data
-      md5: b8f4d5a78e55e88906d5f4aeaf43802e.dir
-      size: 41149064
-      nfiles: 1800
+      md5: 21060888834f7220846d1c6f6c04e649.dir
+      size: 64128504
+      nfiles: 2800
     - path: train.py
       md5: 655d98fb4d95c6e5470d2b8a311326b7
       size: 9637
     outs:
+    - path: Summary.md
+      md5: 390feb1f5efe25cb3b9032562b802740
+      size: 1982
+    - path: accuracy.jpg
+      md5: 980160a9c85a63d5f01cc0cada9f497d
+      size: 35380
+    - path: class_wise.jpg
+      md5: a40bf2f579071804a8dbee7a1d807e5c
+      size: 47269
+    - path: loss.jpg
+      md5: 4429e32639d724de2e57748c5b050602
+      size: 33993
+    - path: metrics.csv
+      md5: 679c05c2229afb280c57d7a42304078a
+      size: 715
     - path: model.pt
-      md5: d258efced51ee3d20fea8390e8e74f82
+      md5: 3e12ea50feace7302e83e1146d49cc06
       size: 89509909
-
