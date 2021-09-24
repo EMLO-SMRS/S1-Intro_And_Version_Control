@@ -7,10 +7,10 @@ from os import path
 def test_data_exists():
     assert path.exists('data') is not True, "Data Folder should not be uploaded"
 
-def test_data_exists():
+def test_data_zip_exists():
     assert path.exists('data.zip') is not True, "Data Zip should not be uploaded"
 
-def test_data_exists():
+def test_model_exists():
     assert path.exists('model.pt') is not True, "Model should not be uploaded"
 
 def test_data_in_yaml_file():
