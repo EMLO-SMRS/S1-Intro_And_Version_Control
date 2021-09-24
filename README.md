@@ -28,6 +28,13 @@ Data Version Control, or DVC, is a data and ML experiment management tool that t
     -O loss.jpg -O accuracy.jpg -O class_wise.jpg -M metrics.csv \
    python train.py
 ```
+#### Abbreviations
+1. -f : force to run the stage
+2. -n : stage name
+3. -d : dependency
+4. -o : output 
+5. -O : output with no cache
+6. -M : metrics with no cache
 
 ### Implementation 
 1. Basic pytorch train test code for binary Image classification.
