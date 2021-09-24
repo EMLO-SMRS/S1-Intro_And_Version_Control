@@ -1,0 +1,15 @@
+stages:
+  train:
+    cmd: python train.py --force
+    deps:
+    - data
+    - train.py
+    outs:
+    - Summary.md
+    - accuracy.jpg
+    - class_wise.jpg
+    - loss.jpg
+    - model.pt
+    metrics:
+    - metrics.csv:
+        cache: false
